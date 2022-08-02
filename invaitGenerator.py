@@ -37,10 +37,10 @@ else:
 if decision == 'начать':
     if shehe == 'ей':
         print()
-        Name = input('Её имя? (в им. п.)\n')
+        name = input('Её имя? (в им. п.)\n')
     elif shehe == 'ему':
         print()
-        Name = input('Его имя? (в им. п.)\n')
+        name = input('Его имя? (в им. п.)\n')
     else:
         print( Back.RED )
         print()
@@ -104,7 +104,7 @@ if decision == 'начать':
     print( Back.MAGENTA )
 #письмо
     print('           Приглашение')
-    print(pol + ' ' + Name + ', приглашаю ' + age2 + ' на')
+    print(pol + ' ' + name + ', приглашаю ' + age2 + ' на')
     print(measure + '! Этот день ' + age3 + ' точно')
     print( age + ' на долго, в хорошем смысле;)')
     print('будет много развлекательных программ и')
