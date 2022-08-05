@@ -20,19 +20,19 @@ if decision == 'начать':
     print()
     shehe = input('Кому адресовано приглашение (ей/ему)?\n')
 elif decision == 'выход':
-	input('Если вновь понадобятся мои услуги, приходите!\n')
+    print('Если вновь понадобятся мои услуги, приходите!\n')
+    exit()
 else:
+    print('Выбранно неправильное действие,\nвыберите (начать/выход).')
     i = 'начать'
     ii = 'выход'
-    while decision<=i or ii:
+    while decision <= i or ii:
         print( Back.RED )
-        print('Выбрано не правильное действие.\nВыберите начать или выход.')
         print()
         print( Back.GREEN )
-        decision2 = input('Приступаем? (начать/выход)\n')    
+        decision2 = input('Приступаем? (начать/выход)\n')
         if decision2<=i or ii:
             break
-    
 #настройки
 if decision == 'начать':
     if shehe == 'ей':
@@ -44,22 +44,11 @@ if decision == 'начать':
     else:
         print( Back.RED )
         print()
-        print('Выбранно неправильное действие,\nвыберите (ей/ему.')	 
-        print( Back.GREEN )         
-
+        print('Выбранно неправильное действие,\nвыберите (ей/ему).')
+        print( Back.GREEN )
     if decision == 'начать':     
         print()	
         appeal = input('Как мне обращаться? (на ты/на вы).\n')
-
-    #print(measure)
-    #elif appeal == 'на вы':
-#       print(measure)
-#    else:
-#        print( Back.RED )
-#
-#        print('Выбранна неправиьное действие,\nвыберите (на ты/на вы).')
-#        print( Back.GREEN )
-
     if decision == 'начать':
         print()
         measure = input('Какое мероприятие?\n')
@@ -120,9 +109,6 @@ if decision == 'начать':
     print()
     print('Спасибо за пользование! В дальнейшем мы будем выпускать\nобновления, в которых будем добавлять новые\nфункции и исправление ошибок в сиситеие;)')
     input()
-  
-
-
 
 
 
@@ -130,4 +116,3 @@ if decision == 'начать':
     
 
 
-	
