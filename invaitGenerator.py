@@ -24,16 +24,15 @@ elif decision == 'выход':
     exit()
 else:
     print('Выбранно неправильное действие,\nвыберите (начать/выход).')
-#    i = 'начать'
-#    ii = 'выход'
-#    while decision<=i or ii:
-#        print( Back.RED )
-#        print()
-#        print( Back.GREEN )
-#        decision2 = input('Приступаем? (начать/выход)\n')
-#        if decision2<=i or ii:
-#            break
-    
+    i = 'начать'
+    ii = 'выход'
+    while decision <= i or ii:
+        print( Back.RED )
+        print()
+        print( Back.GREEN )
+        decision2 = input('Приступаем? (начать/выход)\n')
+        if decision2<=i or ii:
+            break
 #настройки
 if decision == 'начать':
     if shehe == 'ей':
