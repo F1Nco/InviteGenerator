@@ -23,16 +23,16 @@ elif decision == 'выход':
     print('Если вновь понадобятся мои услуги, приходите!\n')
     exit()
 else:
-    print('Выбранно неправильное действие,\nвыберите (начать/выход).')
     i = 'начать'
     ii = 'выход'
-    while decision <= i or ii:
+    while decision not in [i, ii]:
         print( Back.RED )
         print()
+        print('Выбранно неправильное действие,\nвыберите (начать/выход).')
         print( Back.GREEN )
-        decision2 = input('Приступаем? (начать/выход)\n')
-        if decision2<=i or ii:
-            break
+        decision = input('Приступаем? (начать/выход)\n')
+        if decision == i or decision == ii:
+            shehe = input('Кому адресовано приглашение (ей/ему)?\n')
 #настройки
 if decision == 'начать':
     if shehe == 'ей':
