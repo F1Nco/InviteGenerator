@@ -32,6 +32,7 @@ else:
         print( Back.GREEN )
         decision = input('Приступаем? (начать/выход)\n')
         if decision == i or decision == ii:
+            print()
             shehe = input('Кому адресовано приглашение (ей/ему)?\n')
 #настройки
 if decision == 'начать':
@@ -42,21 +43,38 @@ if decision == 'начать':
         print()
         name = input('Его имя? (в им. п.)\n')
     else:
-        print( Back.RED )
+        s = 'ей'
+        ss = 'ему'
+        while shehe not in [s, ss]:
+            print( Back.RED )
+            print()
+            print('Выбранно неправильное действие,\nвыберите (ей/ему).')
+            print( Back.GREEN )
+            shehe = input('Кому адресовано приглашение (ей/ему)?\n')
+            if shehe == s or shehe == ss:
+                print()
+                name = input('Введите имя.\n')
+    if decision == 'начать':
         print()
-        print('Выбранно неправильное действие,\nвыберите (ей/ему).')
-        print( Back.GREEN )
-    if decision == 'начать':     
-        print()	
         appeal = input('Как мне обращаться? (на ты/на вы).\n')
+        a = 'на ты'
+        aa = 'на вы'
+        while appeal not in [a, aa]:
+            print(Back.RED)
+            print()
+            print('Выбранно неправильное действие,\nвыберите (на ты/на вы).')
+            print(Back.GREEN)
+            appeal = input('Как мне обращаться? (на ты/на вы).\n')
+            if appeal == a or appeal == aa:
+                print()
     if decision == 'начать':
         print()
         measure = input('Какое мероприятие?\n')
     if decision == 'начать':
-       print()
-       place = input('Адрес встречи?\n')
+        print()
+        place = input('Адрес встречи?\n')
     if decision == 'начать':
-        print()        
+        print()
         time = input('Время встречи?\n')
     if decision == 'начать':
         print( Back.YELLOW )
@@ -76,14 +94,14 @@ if decision == 'начать':
     if appeal == 'на вы':
         age = 'запомните'
     if appeal == 'на ты':
-        age = 'запомнишь'    
+        age = 'запомнишь'
     if appeal == 'на вы':
         age2 = 'вас'
-    if appeal == 'на ты': 
+    if appeal == 'на ты':
     	age2 = 'тебя'
-    if appeal == 'на вы': 
+    if appeal == 'на вы':
         age3 = 'вы'
-    if appeal == 'на ты': 
+    if appeal == 'на ты':
         age3 = 'ты'
     if shehe == 'ей':
         pol = 'Дорогая'
