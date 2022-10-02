@@ -12,6 +12,23 @@ decision = input('Приступаем? (начать/выход)\n')
 
 print( Back.GREEN )
 
+def cycle_for_setting(mistake):
+    mistake = ('Выбранно неправильное действие')
+    i = 'начать'
+    ii = 'выход'
+    s = 'ей'
+    ss = 'ему'
+    a = 'на ты'
+    aa = 'на вы'
+    allowed = [i, ii, s, ss, a, aa]
+    while decision not in allowed:
+        print( Back.RED )
+        print()
+        print('Выбранно неправильное действие,\nвыберите (начать/выход).')
+        print( Back.GREEN )
+
+        return
+
 #решение
 #True = decision = 'начать' 
 #True = decision = 'выход'
